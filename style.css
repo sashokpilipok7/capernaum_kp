@@ -13,6 +13,10 @@ body {
   background-color: var(--bg-beige);
 }
 
+img {
+  max-width: 100% !important;
+}
+
 /* Navbar Tweaks */
 .navbar {
   background-color: #fff;
@@ -81,4 +85,14 @@ body {
   white-space: nowrap;
   pointer-events: none;
   z-index: 0;
+  animation: infinity-scroll 12s linear infinite;
+}
+
+@keyframes infinity-scroll {
+  0% {
+    transform: translateX(-70%);
+  }
+  100% {
+    transform: translateX(-20%);
+  }
 }
