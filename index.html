@@ -4,19 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capernaum KP</title>
-    <link rel="stylesheet" href="style.css" />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img width="50" src="img/logo.png" alt="" />
+            Capernaum
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -31,10 +35,10 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">Головна</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Проєкти</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -44,201 +48,237 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Більше
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Про нас</a></li>
+                  <li><a class="dropdown-item" href="#">Команда</a></li>
                   <li><hr class="dropdown-divider" /></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Donate</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button class="btn btn-outline-success" type="submit">Search</button>
+              <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search" />
+              <button class="btn btn-outline-success" type="submit">Пошук</button>
             </form>
           </div>
         </div>
       </nav>
     </header>
-    <div class="hero-section">
-      <div class="hero-left">
-        <div class="logo-container">
-          <img src="img/logo.png" alt="" />
+
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-lg-6 bg-white d-flex justify-content-center align-items-center py-5">
+          <div class="text-center">
+            <img src="img/logo.png" alt="" />
+            <h1 class="h1 mt-3 fw-bold" style="color: var(--brand-green); letter-spacing: 10px">CAPERNAUM KP</h1>
+          </div>
         </div>
-      </div>
-      <div class="hero-right">
-        <div class="hero-content">
-          <p class="hero-subtitle">YoungLife</p>
-          <h2 class="hero-title">Капернаум<br />Кам'янець-Подільський</h2>
-          <a href="#" class="btn btn-magenta">Допомога</a>
+        <div class="col-lg-6 hero-right-bg text-white d-flex flex-column justify-content-center p-5">
+          <p class="fs-3 mb-1">YoungLife</p>
+          <h2 class="display-5 fw-bold mb-4">
+            <span class="text-violet">Капернаум</span><br />
+            <span class="fs-2 fw-semibold">Кам'янець-Подільський</span>
+          </h2>
+          <div>
+            <a href="#" class="btn btn-magenta shadow">Допомога</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <section class="stats-bar">
+    <section class="py-5 border-bottom">
       <div class="container">
-        <div class="stat-item">
-          <span class="stat-num">3</span>
-          <span class="stat-label">РОКИ<br />ДІЯЛЬНОСТІ</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">5</span>
-          <span class="stat-label">ПРОЄКТІВ<br />В РЕАЛІЗАЦІЇ</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">15</span>
-          <span class="stat-label">ВОЛОНТЕРІВ</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">2</span>
-          <span class="stat-label">ТРЕНЕРИ</span>
+        <div class="row text-center g-4">
+          <div class="col-6 col-md-3">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <span class="display-4 fw-bold text-orange">3</span>
+              <span class="text-start small fw-bold text-secondary lh-1">РОКИ<br />ДІЯЛЬНОСТІ</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <span class="display-4 fw-bold text-orange">5</span>
+              <span class="text-start small fw-bold text-secondary lh-1">ПРОЄКТІВ<br />В РЕАЛІЗАЦІЇ</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <span class="display-4 fw-bold text-orange">15</span>
+              <span class="text-start small fw-bold text-secondary lh-1">ВОЛОНТЕРІВ</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+              <span class="display-4 fw-bold text-orange">2</span>
+              <span class="text-start small fw-bold text-secondary lh-1">ТРЕНЕРИ</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="projects-section">
+    <section class="py-5">
       <div class="container">
-        <h2 class="section-title">Наші проекти</h2>
-        <div class="projects-intro">
-          <p>
-            Це частина міжнародної місії Young Life, яка поширює Євангеліє серед підлітків з інвалідністю та їхніх
-            сімей, допомагаючи їм знайти друзів.
-          </p>
-          <p class="small-text">
-            Місія, яку ми виконуємо разом — це створення простору, де кожен може відчути себе потрібним та важливим. Ми
-            прагнемо наповнити життя сенсом через дружбу та віру.
-          </p>
+        <h2 class="text-center fw-bold mb-5">Наші проекти</h2>
+
+        <div class="row mb-5 g-4">
+          <div class="col-md-6">
+            <p class="lead fw-bold fs-4">
+              Це частина міжнародної місії Young Life, яка поширює Євангеліє серед підлітків з інвалідністю
+              <br class="d-none d-md-block" />
+              та їхніх сімей, допомагаючи їм знайти друзів.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-secondary">
+              Разом ми втілюємо різні проєкти — від створення підліткових та студентських просторів до організації
+              інклюзивних тренувань для дітей з інвалідністю, таборів, квартирників та гараж-сейлів. <br /><br />Ідея
+              полягає у створенні інклюзивного простору, який дасть дітям з інвалідністю можливість для розвитку та
+              соціалізації. Ми плануємо наповнити його життям через регулярні заходи.
+            </p>
+          </div>
         </div>
 
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card-img">
-              <img src="https://placehold.co/400x250/555/fff?text=Fitness" alt="Fitness" />
-            </div>
-            <div class="card-body">
-              <h3>Інклюзивний фітнес</h3>
-              <p>
-                Регулярні спортивні заняття, які адаптовані для всіх. Ми зосереджуємось на фізичному здоров'ї та
-                командній роботі.
-              </p>
-              <a href="#" class="btn btn-orange">Детальніше</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="https://placehold.co/400x250/555/fff?text=Hikes" alt="Hikes" />
-            </div>
-            <div class="card-body">
-              <h3>Походи</h3>
-              <p>Походи дають можливість підліткам навчитися самостійності та долати особисті виклики.</p>
-              <a href="#" class="btn btn-orange">Детальніше</a>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://placehold.co/400x250/555/fff?text=Fitness" class="card-img-top" alt="Fitness" />
+              <div class="card-body text-center d-flex flex-column">
+                <h3 class="h4 card-title">Інклюзивний фітнес</h3>
+                <p class="card-text text-secondary small flex-grow-1">
+                  Регулярні спортивні заняття, які адаптовані для всіх.
+                </p>
+                <a href="#" class="btn btn-orange mt-3 align-self-center">Детальніше</a>
+              </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-img">
-              <img src="https://placehold.co/400x250/555/fff?text=Events" alt="Events" />
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://placehold.co/400x250/555/fff?text=Hikes" class="card-img-top" alt="Hikes" />
+              <div class="card-body text-center d-flex flex-column">
+                <h3 class="h4 card-title">Походи</h3>
+                <p class="card-text text-secondary small flex-grow-1">
+                  Походи дають можливість підліткам навчитися самостійності.
+                </p>
+                <a href="#" class="btn btn-orange mt-3 align-self-center">Детальніше</a>
+              </div>
             </div>
-            <div class="card-body">
-              <h3>Творчі вечори</h3>
-              <p>Заходи, де ми маємо час для творчого самовираження та спілкування в теплій атмосфері.</p>
-              <a href="#" class="btn btn-orange">Детальніше</a>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://placehold.co/400x250/555/fff?text=Events" class="card-img-top" alt="Events" />
+              <div class="card-body text-center d-flex flex-column">
+                <h3 class="h4 card-title">Творчі вечори</h3>
+                <p class="card-text text-secondary small flex-grow-1">
+                  Заходи, де ми маємо час для творчого самовираження.
+                </p>
+                <a href="#" class="btn btn-orange mt-3 align-self-center">Детальніше</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-green-brand text-white position-relative overflow-hidden py-5">
+      <div class="bg-text-overlay">CAPERNAUM</div>
+      <div class="container position-relative" style="z-index: 1">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img
+              src="https://placehold.co/500x350/333/fff?text=Community"
+              class="img-fluid rounded shadow"
+              alt="Community"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h2 class="display-6 fw-bold mb-3">Допомагати легко!</h2>
+            <p class="mb-4">
+              Капернаум Кам'янець-Подільський допомогає людям з інвалідністю. Станьте частиною змін, підтримавши нас.
+            </p>
+            <div class="d-flex gap-3 align-items-center">
+              <a href="#" class="btn btn-orange">ДЕТАЛЬНІШЕ</a>
+              <a href="#" class="text-white text-uppercase text-decoration-none fw-bold border-bottom border-white"
+                >Стати волонтером</a
+              >
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cta-section">
-      <div class="bg-text">CAPERNAUM CAPER</div>
-      <div class="container cta-flex">
-        <div class="cta-image">
-          <img src="https://placehold.co/500x350/333/fff?text=Community" alt="Community" />
-        </div>
-        <div class="cta-content">
-          <h2>Допомагати легко!</h2>
-          <p>
-            Капернаум Кам'янець-Подільський допомогає людям з інвалідністю. Станьте частиною змін, підтримавши нас
-            волонтерством, фінансово або поширюючи інформацію про нас. Твоя підтримка змінює життя.
-          </p>
-          <div class="cta-buttons">
-            <a href="#" class="btn btn-orange">ДЕТАЛЬНІШЕ</a>
-            <a href="#" class="link-text">СТАТИ ВОЛОНТЕРОМ</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="news-section">
+    <section class="py-5">
       <div class="container">
-        <h2 class="section-title">Останні новини</h2>
-        <div class="cards-grid">
-          <div class="card">
-            <div class="card-img">
-              <img src="https://placehold.co/400x250/555/fff?text=News+1" alt="News 1" />
-            </div>
-            <div class="card-body">
-              <h3>Відновлення Тренувального Процесу</h3>
-              <div class="meta">20.10.2025 | 0 Comments</div>
-              <a href="#" class="btn btn-orange">ДЕТАЛЬНІШЕ</a>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="https://placehold.co/400x250/555/fff?text=News+2" alt="News 2" />
-            </div>
-            <div class="card-body">
-              <h3>Літній Табір та Пригоди</h3>
-              <div class="meta">15.08.2025 | 0 Comments</div>
-              <a href="#" class="btn btn-orange">ДЕТАЛЬНІШЕ</a>
+        <h2 class="text-center fw-bold mb-5">Останні новини</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://placehold.co/400x250/555/fff?text=News+1" class="card-img-top" alt="News 1" />
+              <div class="card-body text-center d-flex flex-column">
+                <h3 class="h5 card-title">Відновлення Тренувань</h3>
+                <div class="text-muted small mb-3">20.10.2025 | 0 Comments</div>
+                <a href="#" class="btn btn-orange mt-auto align-self-center">ДЕТАЛЬНІШЕ</a>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-img">
-              <img src="https://placehold.co/400x250/555/fff?text=News+3" alt="News 3" />
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://placehold.co/400x250/555/fff?text=News+2" class="card-img-top" alt="News 2" />
+              <div class="card-body text-center d-flex flex-column">
+                <h3 class="h5 card-title">Літній Табір</h3>
+                <div class="text-muted small mb-3">15.08.2025 | 0 Comments</div>
+                <a href="#" class="btn btn-orange mt-auto align-self-center">ДЕТАЛЬНІШЕ</a>
+              </div>
             </div>
-            <div class="card-body">
-              <h3>Семінар TotalFit</h3>
-              <div class="meta">12.05.2025 | 0 Comments</div>
-              <a href="#" class="btn btn-orange">ДЕТАЛЬНІШЕ</a>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100">
+              <img src="https://placehold.co/400x250/555/fff?text=News+3" class="card-img-top" alt="News 3" />
+              <div class="card-body text-center d-flex flex-column">
+                <h3 class="h5 card-title">Семінар TotalFit</h3>
+                <div class="text-muted small mb-3">12.05.2025 | 0 Comments</div>
+                <a href="#" class="btn btn-orange mt-auto align-self-center">ДЕТАЛЬНІШЕ</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <footer>
-      <div class="container footer-content">
-        <div class="footer-map">
-          <svg width="150" height="100" viewBox="0 0 100 60" fill="none">
-            <path d="M10 30 Q 30 10 50 30 T 90 30" stroke="#e58fa8" stroke-width="3" fill="none" />
-            <path d="M10 30 L 20 50 L 40 40" fill="#5cc27b" opacity="0.6" />
-          </svg>
+    <footer class="footer-bg text-white py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3">
+            <svg width="150" height="100" viewBox="0 0 100 60" fill="none">
+              <path d="M10 30 Q 30 10 50 30 T 90 30" stroke="#e58fa8" stroke-width="3" fill="none" />
+              <path d="M10 30 L 20 50 L 40 40" fill="#5cc27b" opacity="0.6" />
+            </svg>
+          </div>
+          <div class="col-md-3">
+            <h4 class="h6 opacity-75">ПРО НАС</h4>
+          </div>
+          <div class="col-md-3">
+            <h4 class="h6 opacity-75">КОНТАКТИ</h4>
+          </div>
+          <div class="col-md-3">
+            <h4 class="h6 opacity-75">ДОПОМОГА</h4>
+            <ul class="list-unstyled small opacity-75">
+              <li>Скрипника 67</li>
+              <li>+38 (067) 123 45 67</li>
+              <li>+38 (063) 123 45 68</li>
+            </ul>
+          </div>
         </div>
-        <div class="footer-links">
-          <div class="link-col">
-            <h4>ПРО НАС</h4>
-          </div>
-          <div class="link-col">
-            <h4>КОНТАКТИ</h4>
-          </div>
-          <div class="link-col">
-            <h4>ДОПОМОГА</h4>
-            <p>Скрипника 67</p>
-            <p>+38 (067) 123 45 67</p>
-            <p>+38 (063) 123 45 68</p>
-          </div>
+
+        <hr class="opacity-25 my-4" />
+
+        <div class="text-center small opacity-75">
+          <p class="mb-0">Copyright 2025 Capernaum KP</p>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="socials">FB IG YT</div>
-        <p>Copyright 2025 Capernaum KP</p>
       </div>
     </footer>
     <script
