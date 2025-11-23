@@ -35,7 +35,12 @@ img {
   padding: 0;
   padding-top: 82px;
 }
-/* Hero Specifics */
+.overlay-for-text {
+  background-color: #00000090;
+  width: 100%;
+  border-radius: 12px;
+}
+
 .hero-right-bg {
   background-color: #00000090;
   width: 100%;
@@ -174,5 +179,8 @@ img {
     h2 {
       line-height: 48px;
     }
+  }
+  .overlay-for-text {
+    width: fit-content;
   }
 }

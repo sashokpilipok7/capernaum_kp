@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Про Нас | Capernaum KP</title>
+
+    <meta
+      name="description"
+      content="Дізнайтеся більше про команду Капернаум Кам'янець-Подільський. Ми створюємо інклюзивне середовище, де кожен підліток з інвалідністю має друзів та наставників."
+    />
+    <meta name="keywords" content="Про нас, місія, команда, Капернаум, Young Life, інклюзія, християнські цінності" />
+    <meta name="author" content="Capernaum KP" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://capernaum-kp.club/about" />
+    <meta property="og:title" content="Хто ми є | Capernaum KP" />
+    <meta
+      property="og:description"
+      content="Історія та цінності нашої команди. Будуємо мости дружби для людей з інвалідністю."
+    />
+    <meta property="og:image" content="https://capernaum-kp.club/img/team-photo.jpg" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "mainEntity": {
+          "@type": "NGO",
+          "name": "Capernaum KP",
+          "description": "Частина міжнародної місії Young Life. Ми працюємо з підлітками та молоддю з інвалідністю.",
+          "foundingDate": "2022",
+          "location": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Кам'янець-Подільський",
+              "addressCountry": "UA"
+            }
+          }
+        }
+      }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .value-icon-wrapper {
+        width: 80px;
+        height: 80px;
+        background-color: var(--brand-light-green, #6ca08e);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: white;
+      }
+      .text-justify-custom {
+        text-align: justify;
+      }
+      .team-img {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <%- include('partials/header') %>
+    <div class="mt-5 mb-5">-</div>
+    <h1 class="fw-bold text-orange text-center">Про Нас</h1>
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="position-relative">
+              <img src="img/team.jpg" alt="Наша команда" class="team-img img-fluid rounded shadow-lg" />
+              <div
+                class="position-absolute bg-green-brand rounded"
+                style="width: 100px; height: 100px; bottom: -20px; left: -20px; z-index: -1"
+              ></div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 animate-on-scroll">
+            <h2 class="h2 fw-bold mb-4" style="color: var(--brand-green)">Наша Місія</h2>
+            <p class="lead fw-bold text-dark">
+              Капернаум — це частина міжнародної місії Young Life, яка покликана подарувати радість життя підліткам з
+              інвалідністю.
+            </p>
+            <p class="text-secondary text-justify-custom">
+              Ми віримо, що кожна людина створена для повноцінного життя та дружби. На жаль, молодь з інвалідністю часто
+              стикається з ізоляцією. Наша мета — зруйнувати ці бар'єри.
+            </p>
+            <p class="text-secondary text-justify-custom">
+              У Кам'янці-Подільському ми створили спільноту, де волонтери (здебільшого студенти) стають справжніми
+              друзями для наших учасників. Ми не просто проводимо заходи — ми розділяємо життя разом.
+            </p>
+
+            <div class="mt-4">
+              <a href="#values" class="btn btn-orange rounded-pill px-4">Наші Цінності</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="values" class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5 animate-on-scroll">
+          <h2 class="fw-bold">Що нас об'єднує</h2>
+          <p class="text-muted">Три стовпи, на яких тримається наше служіння</p>
+        </div>
+
+        <div class="row g-4 text-center">
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
+              <div class="value-icon-wrapper">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="h4 fw-bold">Щира Дружба</h3>
+              <p class="text-muted small">
+                Ми не називаємо наших учасників "особливими". Вони — наші друзі. Ми будуємо стосунки, що виходять за
+                межі програм.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
+              <div class="value-icon-wrapper" style="background-color: var(--brand-orange, #e07a42)">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="h4 fw-bold">Повна Інклюзія</h3>
+              <p class="text-muted small">
+                Від фітнесу до творчих вечорів — ми адаптуємо кожну активність так, щоб кожен міг взяти участь, відчути
+                успіх та свою важливість.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 animate-on-scroll">
+            <div class="card h-100 border-0 shadow-sm p-4 hover-lift">
+              <div class="value-icon-wrapper" style="background-color: var(--brand-magenta, #b93b78)">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              </div>
+              <h3 class="h4 fw-bold">Євангеліє</h3>
+              <p class="text-muted small">
+                Ми ділимося Доброю Новиною не тільки словом, але й ділом. Ми віримо, що Бог любить кожного без винятків.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" style="background-color: var(--bg-beige)">
+      <div class="container animate-on-scroll">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <svg width="50" height="50" viewBox="0 0 24 24" fill="#e07a42" class="mb-3 opacity-50">
+              <path
+                d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H11.983C10.8784 16 9.983 16.8954 9.983 18L9.983 21"
+                stroke="#e07a42"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z"
+                stroke="#e07a42"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <figure>
+              <blockquote class="blockquote">
+                <p class="fs-4 fst-italic">
+                  "Наша місія — створення простору, де кожен може відчути себе потрібним та важливим. Ми прагнемо
+                  наповнити життя сенсом через дружбу та віру."
+                </p>
+              </blockquote>
+              <figcaption class="blockquote-footer mt-2">
+                Команда <cite title="Source Title">Capernaum KP</cite>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('partials/help') %> <%- include('partials/footer') %>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
