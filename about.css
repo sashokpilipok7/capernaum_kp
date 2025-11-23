@@ -1,0 +1,20 @@
+.value-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  background-color: var(--brand-light-green, #6ca08e);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: white;
+}
+.text-justify-custom {
+  text-align: justify;
+}
+.team-img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+}

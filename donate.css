@@ -1,0 +1,34 @@
+.btn-mono {
+  background: linear-gradient(45deg, #000000, #3a3a3a); /* Monobank Black style */
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-mono:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* IBAN Card Styling */
+.requisites-card {
+  background-color: white;
+  border: 2px dashed #ccc;
+  border-radius: 15px;
+}
+main {
+  background: url('img/donate-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
