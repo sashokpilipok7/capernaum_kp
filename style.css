@@ -27,14 +27,12 @@ img {
 }
 
 .hero-section {
-  min-height: 75vh;
   background-image: url('./img/club1.jpg');
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding: 0;
-  padding-top: 82px;
+  margin-top: 82px;
 }
 .overlay-for-text {
   background-color: #00000090;
@@ -43,6 +41,7 @@ img {
 }
 
 .hero-right-bg {
+  margin: 10vh 0;
   background-color: #00000090;
   width: 90%;
   border-radius: 12px;
@@ -195,6 +194,7 @@ img {
   }
   .hero-right-bg {
     width: fit-content;
+    margin: 0;
     h2 {
       line-height: 48px;
     }
