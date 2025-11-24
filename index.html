@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="uk">
   <head>
@@ -224,45 +226,64 @@
         </div>
 
         <div class="row justify-content-center g-4">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow h-100">
-              <img src="img/project1.jpg" class="card-img-top" alt="Fitness" />
+              <img src="img/project1.jpg" class="card-img-top" alt="Інклюзивний фітнес" />
               <div class="card-body text-center d-flex flex-column">
                 <h3 class="h4 card-title">Інклюзивний фітнес</h3>
                 <p class="card-text text-secondary small flex-grow-1">
-                  Регулярні спортивні тренування, адаптовані для всіх. Ми зосереджуємося на фізичному здоров’ї та
-                  командній роботі.
+                  Регулярні спортивні тренування, адаптовані для всіх. Ми зосереджуємося на фізичному та емоційному здоров’ї.
                 </p>
-                <a href="#" class="btn btn-orange mt-3 align-self-center">Детальніше</a>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-fitness"
+                  class="btn btn-orange mt-3 align-self-center"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+             
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow h-100">
-              <img src="img/project2.jpg" class="card-img-top" alt="Hikes" />
+              <img src="img/project2.jpg" class="card-img-top" alt="Походи" />
               <div class="card-body text-center d-flex flex-column">
                 <h3 class="h4 card-title">Походи</h3>
                 <p class="card-text text-secondary small flex-grow-1">
                   Ці походи допомагають підліткам навчатися самостійності та долати особисті виклики.
                 </p>
-                <a href="#" class="btn btn-orange mt-3 align-self-center">Детальніше</a>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-hikes"
+                  class="btn btn-orange mt-3 align-self-center"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </div>
-
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+             
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card shadow h-100">
-              <img src="img/project3.jpg" class="card-img-top" alt="Events" />
+              <img src="img/project3.jpg" class="card-img-top" alt="Творчі вечори" />
               <div class="card-body text-center d-flex flex-column">
                 <h3 class="h4 card-title">Творчі вечори</h3>
                 <p class="card-text text-secondary small flex-grow-1">
                   Заходи, де ми малюємо, робимо поробки або граємо музику в розслабленій атмосфері.
                 </p>
-                <a href="#" class="btn btn-orange mt-3 align-self-center">Детальніше</a>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-events"
+                  class="btn btn-orange mt-3 align-self-center"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </div>
+             
         </div>
       </div>
     </section>
@@ -366,6 +387,148 @@
   </div>
 </footer>
 
+
+  
+    <div class="modal fade projects-modal" id="modal-fitness" tabindex="-1" aria-labelledby="label-fitness" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+          <div class="modal-header bg-light projects-modal-header">
+            <h1 class="modal-title fs-4 fw-bold text-white" id="label-fitness">
+              Інклюзивний фітнес
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/project1.jpg" class="img-fluid rounded shadow-sm w-100 projects-modal-img" alt="Інклюзивний фітнес">
+              </div>
+              
+              <div class="col-md-7">
+                <div class="text-secondary description-content">
+                  
+                  <p>Наші тренування проходять у спеціалізованому залі Archangel.</p>
+<p>Кожне тренування — це не лише спорт, а й командна взаємодія.</p>
+<h5>Що ми робимо:</h5>
+<ul>
+  <li>Функціональні тренування</li>
+  <li>Елементи Тайландського боксу</li>
+  <li>Робота з м'ячами та резинками</li>
+  <li>Естафети та командні ігри</li>
+</ul>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer border-0">
+            <a href="/help" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade projects-modal" id="modal-hikes" tabindex="-1" aria-labelledby="label-hikes" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+          <div class="modal-header bg-light projects-modal-header">
+            <h1 class="modal-title fs-4 fw-bold text-white" id="label-hikes">
+              Походи
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/project2.jpg" class="img-fluid rounded shadow-sm w-100 projects-modal-img" alt="Походи">
+              </div>
+              
+              <div class="col-md-7">
+                <div class="text-secondary description-content">
+                  
+                  <p>Вихід із зони комфорту — це найкращий спосіб рости. Ми організовуємо як одноденні поїздки на природу.</p>
+<p>
+  У походах ми вчимося жити без гаджетів, розпалювати багаття, ставити намети та готувати їжу. Це формує навички
+  самостійності, які критично важливі для дорослого життя.
+</p>
+<h5>Наші пригоди:</h5>
+<ul>
+  <li>Джуринський водоспад (Тернопіль)</li>
+  <li>Лісова пісня</li>
+  <li>Прогулянки Смотрицьким каньйоном</li>
+</ul>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer border-0">
+            <a href="/help" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="modal fade projects-modal" id="modal-events" tabindex="-1" aria-labelledby="label-events" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+          <div class="modal-header bg-light projects-modal-header">
+            <h1 class="modal-title fs-4 fw-bold text-white" id="label-events">
+              Творчі вечори
+            </h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-5">
+                <img src="img/project3.jpg" class="img-fluid rounded shadow-sm w-100 projects-modal-img" alt="Творчі вечори">
+              </div>
+              
+              <div class="col-md-7">
+                <div class="text-secondary description-content">
+                  
+                  <p>
+  Раз на місяць ми збираємося в нашому центрі, щоб творити. Тут немає оцінок, критики чи домашніх завдань — тільки
+  свобода та гарні емоції.
+</p>
+<p>
+  Ми проводимо різноманітні майстер-класи, де кожен може відкрити в собі талант. Часто вечори закінчуються піснями під
+  гітару, чаюванням та щирими розмовами.
+</p>
+<h5>Чим ми займаємось:</h5>
+<ul>
+  <li>Арт-терапія та малювання</li>
+  <li>Ліпка з глини та створення свічок</li>
+  <li>Вечори настільних ігор</li>
+  <li>Музичні джеми та кіноперегляди</li>
+</ul>
+
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer border-0">
+            <a href="/help" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

@@ -74,8 +74,8 @@ img {
 
 .btn-orange {
   background-color: var(--brand-orange);
+  padding: 10px 24px;
   font-size: 18px;
-  padding: 4px 20px;
 }
 .btn-orange:hover {
   background-color: var(--brand-orange) !important;
@@ -172,6 +172,17 @@ img {
   height: 60%;
   width: 1px;
   background: linear-gradient(to bottom, transparent, #ccc, transparent);
+}
+
+.projects-modal {
+  .projects-modal-img {
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+  .projects-modal-header {
+    background-color: var(--brand-light-green) !important;
+  }
 }
 
 @media (min-width: 768px) {
