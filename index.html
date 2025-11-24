@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html lang="uk">
   <head>
@@ -323,36 +325,58 @@
       <div class="container">
         <h2 class="text-center fw-bold mb-5">Останні новини</h2>
         <div class="row justify-content-center g-4">
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100">
-              <img src="img/news1.JPG" class="card-img-top" alt="News 1" />
+              <img src="img/news1.JPG" class="card-img-top" alt="Відновлення Тренувань" />
               <div class="card-body text-center d-flex flex-column">
                 <h3 class="h5 card-title">Відновлення Тренувань</h3>
                 <div class="text-muted small mb-3">20.10.2025 | 0 Comments</div>
-                <a href="#" class="btn btn-orange mt-auto align-self-center">ДЕТАЛЬНІШЕ</a>
+                 <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-training_restart"
+                  class="btn btn-orange mt-auto align-self-center"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100">
-              <img src="img/news2.jpg" class="card-img-top" alt="News 2" />
+              <img src="img/news2.jpg" class="card-img-top" alt="Літній Табір" />
               <div class="card-body text-center d-flex flex-column">
                 <h3 class="h5 card-title">Літній Табір</h3>
                 <div class="text-muted small mb-3">15.08.2025 | 0 Comments</div>
-                <a href="#" class="btn btn-orange mt-auto align-self-center">ДЕТАЛЬНІШЕ</a>
+                 <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-summer_camp"
+                  class="btn btn-orange mt-auto align-self-center"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
             <div class="card h-100">
-              <img src="img/news3.JPG" class="card-img-top" alt="News 3" />
+              <img src="img/news3.JPG" class="card-img-top" alt="Семінар TotalFit" />
               <div class="card-body text-center d-flex flex-column">
                 <h3 class="h5 card-title">Семінар TotalFit</h3>
                 <div class="text-muted small mb-3">12.05.2025 | 0 Comments</div>
-                <a href="#" class="btn btn-orange mt-auto align-self-center">ДЕТАЛЬНІШЕ</a>
+                 <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-totalfit_seminar"
+                  class="btn btn-orange mt-auto align-self-center"
+                >
+                  Детальніше
+                </button>
               </div>
             </div>
           </div>
+            
         </div>
       </div>
     </section>
@@ -411,7 +435,7 @@
                   
                   <p>Наші тренування проходять у спеціалізованому залі Archangel.</p>
 <p>Кожне тренування — це не лише спорт, а й командна взаємодія.</p>
-<h5>Що ми робимо:</h5>
+<h5 class="text-orange">Що ми робимо:</h5>
 <ul>
   <li>Функціональні тренування</li>
   <li>Елементи Тайландського боксу</li>
@@ -426,7 +450,7 @@
           </div>
           
           <div class="modal-footer border-0">
-            <a href="/help" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+            <a href="/donate.html" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
           </div>
           
         </div>
@@ -458,7 +482,7 @@
   У походах ми вчимося жити без гаджетів, розпалювати багаття, ставити намети та готувати їжу. Це формує навички
   самостійності, які критично важливі для дорослого життя.
 </p>
-<h5>Наші пригоди:</h5>
+<h5 class="text-orange">Наші пригоди:</h5>
 <ul>
   <li>Джуринський водоспад (Тернопіль)</li>
   <li>Лісова пісня</li>
@@ -472,7 +496,7 @@
           </div>
           
           <div class="modal-footer border-0">
-            <a href="/help" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+            <a href="/donate.html" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
           </div>
           
         </div>
@@ -507,7 +531,7 @@
   Ми проводимо різноманітні майстер-класи, де кожен може відкрити в собі талант. Часто вечори закінчуються піснями під
   гітару, чаюванням та щирими розмовами.
 </p>
-<h5>Чим ми займаємось:</h5>
+<h5 class="text-orange">Чим ми займаємось:</h5>
 <ul>
   <li>Арт-терапія та малювання</li>
   <li>Ліпка з глини та створення свічок</li>
@@ -522,7 +546,128 @@
           </div>
           
           <div class="modal-footer border-0">
-            <a href="/help" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+            <a href="/donate.html" class="btn btn-orange rounded-pill">Підтримати цей проєкт</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+
+
+  
+  <div class="modal fade projects-modal" id="modal-training_restart" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+          <div class="modal-header projects-modal-header ">
+            <h5 class="modal-title text-white fw-bold">Відновлення Тренувань</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <img src="img/news1.JPG" class="img-fluid rounded w-100 projects-modal-img" alt="Відновлення Тренувань">
+                
+              </div>
+              <div class="col-md-6">
+                <div class="text-secondary description-content">
+                  <p>Відновлення регулярних тренувань після канікул</p>
+<p>Середа - 14:00</p>
+
+                </div>
+                <div class="text-muted small mt-2">Опубліковано: 20.10.2025</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  <div class="modal fade projects-modal" id="modal-summer_camp" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+          <div class="modal-header projects-modal-header ">
+            <h5 class="modal-title text-white fw-bold">Літній Табір</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <img src="img/news2.jpg" class="img-fluid rounded w-100 projects-modal-img" alt="Літній Табір">
+                
+              </div>
+              <div class="col-md-6">
+                <div class="text-secondary description-content">
+                  <p>Табір для підлітків з інвалідністю з Хмельницької області</p>
+<p>
+  Літо — це час нових вражень, друзів та пригод! Цього року ми організували незабутній літній табір для підлітків з
+  інвалідністю з Хмельницької області. Протягом тижня учасники мали змогу насолоджуватися різноманітними активностями,
+  розвивати свої навички та просто весело проводити час.
+</p>
+<p></p>
+<p class="text-secondary">Учасники: 50-60 підлітків</p>
+<h5 class="text-orange">Активності</h5>
+<ul>
+  <li>Конкурси та ігри</li>
+  <li>Творчі вечори</li>
+  <li>Спортивні змагання</li>
+</ul>
+
+                </div>
+                <div class="text-muted small mt-2">Опубліковано: 15.08.2025</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  
+  <div class="modal fade projects-modal" id="modal-totalfit_seminar" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          
+          <div class="modal-header projects-modal-header ">
+            <h5 class="modal-title text-white fw-bold">Семінар TotalFit</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          
+          <div class="modal-body">
+            <div class="row g-4">
+              <div class="col-md-6">
+                <img src="img/news3.JPG" class="img-fluid rounded w-100 projects-modal-img" alt="Семінар TotalFit">
+                
+              </div>
+              <div class="col-md-6">
+                <div class="text-secondary description-content">
+                  <p>Підвищення кваліфікації для тренерів TotalFit</p>
+<p>
+  Нещодавно наші тренери взяли участь у семінарі від TotalFit, де вони отримали нові знання та навички для покращення
+  тренувального процесу. Семінар охоплював сучасні методики тренувань, адаптацію вправ для людей з інвалідністю та
+  ефективні способи мотивації учасників.
+</p>
+
+                </div>
+                <div class="text-muted small mt-2">Опубліковано: 12.05.2025</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
           </div>
           
         </div>
