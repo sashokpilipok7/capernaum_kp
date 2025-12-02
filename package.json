@@ -1,0 +1,22 @@
+{
+  "name": "capernaum_kp",
+  "version": "1.0.0",
+  "description": "Capernaum K-P website",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashokpilipok7/capernaum_kp.git"
+  },
+  "author": "Sasha Pylypenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sashokpilipok7/capernaum_kp/issues"
+  },
+  "homepage": "https://github.com/sashokpilipok7/capernaum_kp#readme",
+  "devDependencies": {
+    "ejs": "^3.1.10"
+  }
+}

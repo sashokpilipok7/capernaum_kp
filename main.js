@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
 
   // Hero: Selects the content inside the two main columns of the first container
-  const heroLeft = document.querySelector('.container-fluid .col-lg-6:first-child > div');
-  const heroRight = document.querySelector('.container-fluid .col-lg-6:last-child > div');
+  const heroLeft = document.querySelector('.hero-right-bg');
 
   // Stats: Selects the 4 columns in the border-bottom section
   // Note: Using the section class to differentiate
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   hideElements(heroLeft);
-  hideElements(heroRight);
   hideElements(statsItems);
   hideElements(allCards);
   hideElements(ctaItems);
@@ -39,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
    * 1. HERO ANIMATION (Triggered immediately)
    */
   anime({
-    targets: [heroLeft, heroRight],
+    targets: [heroLeft],
     opacity: [0, 1],
     translateY: [20, 0],
     easing: 'easeOutQuad',
@@ -83,4 +81,13 @@ document.addEventListener('DOMContentLoaded', () => {
   animateOnScroll(statsItems, 100);
   animateOnScroll(allCards, 100); // Will animate Project cards and News cards as you scroll to them
   animateOnScroll(ctaItems, 200);
+});
+
+const menu = document.querySelector('#mainNav');
+const nav_items_internal = document.querySelectorAll('.nav-item-internal a');
+
+nav_items_internal.forEach((item) => {
+  item.addEventListener('click', (e) => {
+    menu.classList.remove('show');
+  });
 });
