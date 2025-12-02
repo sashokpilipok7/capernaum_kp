@@ -27,7 +27,7 @@ img {
 }
 
 .hero-section {
-  background-image: url('./img/club1.jpg');
+  background-image: url('./img/club1.webp');
   background-size: contain;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ img {
 @media (min-width: 768px) {
   .hero-section {
     min-height: 65vh;
-    background-image: url('./img/help.JPG');
+    background-image: url('./img/help.webp');
     background-size: cover;
     background-repeat: no-repeat;
   }
