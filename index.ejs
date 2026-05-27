@@ -316,7 +316,7 @@ const news = [
     <%- include('partials/footer') %>
 
   <% projects.forEach(function(project) { %>
-    <div class="modal fade projects-modal" id="modal-<%= project.id %>" tabindex="-1" aria-labelledby="label-<%= project.id %>" aria-hidden="true">
+    <div class="modal fade projects-modal" id="modal-<%= project.id %>" tabindex="-1" aria-labelledby="label-<%= project.id %>" aria-hidden="true" role="dialog" aria-modal="true">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
           
