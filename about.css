@@ -7,10 +7,10 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto 20px;
-  color: white;
+  color: rgb(239, 239, 239);
 }
 .text-justify-custom {
-  text-align: justify;
+  text-align: justify; 
 }
 .team-img {
   width: 100%;
